@@ -1,3 +1,9 @@
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+    Title = "4N2e^GaS(v@%Cy)";
+    Text = "By BUNBASTER12BLASTER;Menitlion";
+    Icon = "rbxthumb://type=Asset&id=11104609521&w=150&h=150"})
+Duration = 26;
+wait(1)
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
 local Window = Library.CreateLib("BUNBASTER12BLASTER", "RJTheme4")
 local Tab = Window:NewTab("Morph's")

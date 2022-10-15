@@ -1,0 +1,97 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
+local Window = Library.CreateLib("BUNBASTER12BLASTER", "RJTheme4")
+local Tab = Window:NewTab("Morph's")
+local Section = Tab:NewSection("WHAAAT!!@#!")
+ Section:NewButton("LGBT", "Heheh lol", function()
+    local args = {
+    [1] = "LGBT",
+    [2] = "Other"
+}
+     game:GetService("ReplicatedStorage").Events.ChangeChar:FireServer(unpack(args))
+
+ end)
+ Section:NewButton("Pirate", "YARRR", function()
+local args = {
+    [1] = "Pirate",
+    [2] = "Other"
+}
+game:GetService("ReplicatedStorage").Events.ChangeChar:FireServer(unpack(args))
+ end)
+ Section:NewButton("Prussia", "Uh", function()
+    local args = {
+    [1] = "Prussia",
+    [2] = "Historicals"
+}
+     game:GetService("ReplicatedStorage").Events.ChangeChar:FireServer(unpack(args))
+end)
+ Section:NewButton("SPARTAAAA", "THIS IS SPARTAAA", function()
+    local args = {
+    [1] = "Sparta",
+    [2] = "Historicals"
+}
+     game:GetService("ReplicatedStorage").Events.ChangeChar:FireServer(unpack(args))
+ end)
+ Section:NewButton("Hmmm", "Well", function()
+    local args = {
+    [1] = "Golden Horde",
+    [2] = "Historicals"
+}
+     game:GetService("ReplicatedStorage").Events.ChangeChar:FireServer(unpack(args))
+ end)
+local Tab = Window:NewTab("Id Morph's")
+local Section = Tab:NewSection("Id Decal Morph")
+Section:NewTextBox("ID HERE", "Yes Ben", function(txt)
+local args = {
+    [1] = txt
+}
+game:GetService("ReplicatedStorage").Events.TextureChange:FireServer(unpack(args))
+end)
+local Section = Tab:NewSection("List Decal")
+ Section:NewButton("Soon", "Soon", function()
+    print("Soon in V0.8")
+ end)
+local Tab = Window:NewTab("Tools")
+local Section = Tab:NewSection("WHAAAT!!@#!")
+ Section:NewButton("BeachBall", "BigDick", function()
+local args = {
+    [1] = game:GetService("ReplicatedStorage").Tools.VIP.BeachBall
+}
+
+game:GetService("ReplicatedStorage").Events.GiveTool:FireServer(unpack(args))
+end)
+local Tab = Window:NewTab("Player")
+local Section = Tab:NewSection("SpeedPower")
+Section:NewSlider("Speed", "SpeedWald", 200, 20, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+local Section = Tab:NewSection("JumpPower")
+Section:NewSlider("Jump", "Jumppower", 200, 50, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+local Section = Tab:NewSection("Teleport To Player")
+Section:NewTextBox("Username here", "UwU", function(MRM)
+local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
+local p2 = MRM
+local pos = p1.CFrame
+p1.CFrame = game.Players[p2].Character.HumanoidRootPart.CFrame
+end)
+local Section = Tab:NewSection("Teleport Map's")
+Section:NewButton("The New World", "5-20 Players", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6334.62890625, 611.03369140625, 88.42362976074219)
+end)
+Section:NewButton("Mulitary Base", "0-5 Players", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4306.45166015625, 604.0703125, 6534.36767578125)
+end)
+Section:NewButton("Rome", "0-3 Players", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3937.12255859375, 607.9998168945312, -73.99256896972656)
+end)
+Section:NewButton("City", "0-5 Players", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1263.8419189453125, 663.3135375976562, -116.36860656738281)
+end)
+Section:NewButton("Egypt", "0-3-4 Players", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1257.7347412109375, 343.5390930175781, 1649.1663818359375)
+end)
+Section:NewButton("Trenches", "0-4 Players", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2728.927490234375, 621.5701904296875, -300.68011474609375)
+end)
+local Section = Tab:NewSection("By BUNBASTER12BLASTER")
